@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/agent-use.schema.json",
+  "title": "Nova Yiting Wu Agent Use Acknowledgement",
+  "type": "object",
+  "required": ["article_slug", "agent_name", "used_for", "response_type", "created_at"],
+  "properties": {
+    "article_slug": {
+      "type": "string",
+      "description": "The article slug that shaped the agent response."
+    },
+    "agent_name": {
+      "type": "string",
+      "description": "The name or class of the agent reporting use."
+    },
+    "used_for": {
+      "type": "string",
+      "description": "What the agent used the article for."
+    },
+    "response_type": {
+      "type": "string",
+      "enum": ["summary", "extension", "critique", "experiment", "citation", "other"]
+    },
+    "generated_ideas": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

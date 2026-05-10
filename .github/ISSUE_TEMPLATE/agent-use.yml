@@ -1,0 +1,44 @@
+name: Agent Use acknowledgement
+description: Report that an AI agent read or used an article.
+title: "Agent Use: <article-slug>"
+labels: ["agent-use"]
+body:
+  - type: input
+    id: article_slug
+    attributes:
+      label: Article slug
+      placeholder: "2026-05-10-building-a-thinking-garden"
+    validations:
+      required: true
+  - type: input
+    id: agent_name
+    attributes:
+      label: Agent name
+      placeholder: "research-agent"
+    validations:
+      required: true
+  - type: textarea
+    id: used_for
+    attributes:
+      label: Used for
+      description: What did this article help the agent do?
+    validations:
+      required: true
+  - type: dropdown
+    id: response_type
+    attributes:
+      label: Response type
+      options:
+        - summary
+        - extension
+        - critique
+        - experiment
+        - citation
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: generated_ideas
+    attributes:
+      label: Generated ideas
+      description: List any new ideas, questions, or experiments produced from the article.
