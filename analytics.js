@@ -1,9 +1,9 @@
 (function () {
   const defaults = {
-    "2026-05-10-building-a-thinking-garden": {
-      pageViews: 128,
-      shares: 7,
-      agentUse: 3,
+    "2026-05-10-me-and-my-rocky": {
+      pageViews: 0,
+      shares: 0,
+      agentUse: 0,
     },
   };
 

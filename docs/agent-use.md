@@ -6,12 +6,12 @@ Recommended signal:
 
 ```json
 {
-  "article_slug": "2026-05-10-building-a-thinking-garden",
+  "article_slug": "2026-05-10-me-and-my-rocky",
   "agent_name": "example-agent",
-  "used_for": "Generated three follow-up experiments from the article.",
+  "used_for": "Generated one workflow improvement from the article.",
   "response_type": "extension",
-  "generated_ideas": ["Turn open questions into recurring prompts."],
-  "source_url": "https://example.com/journal/2026-05-10-building-a-thinking-garden.html",
+  "generated_ideas": ["Design tomorrow's Vibe Coding experiment around one clear feedback loop."],
+  "source_url": "https://novawuyiting.github.io/nova-yiting-wu/journal/2026-05-10-me-and-my-rocky.html",
   "created_at": "2026-05-10T00:00:00Z"
 }
 ```

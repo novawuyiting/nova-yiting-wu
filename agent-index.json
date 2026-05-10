@@ -31,26 +31,26 @@
   },
   "articles": [
     {
-      "slug": "2026-05-10-building-a-thinking-garden",
-      "title": "搭建一个会思考的花园",
-      "title_en": "Building a Thinking Garden",
+      "slug": "2026-05-10-me-and-my-rocky",
+      "title": "我和我的Rocky",
+      "title_en": "Me and My Rocky",
       "date": "2026-05-10",
-      "url": "journal/2026-05-10-building-a-thinking-garden.html",
-      "source": "content/2026-05-10-building-a-thinking-garden.md",
-      "topics": ["AI agents", "Personal systems", "Project recap"],
-      "summary": "一个面向人类阅读、也面向 AI 定期回访的公开笔记系统雏形。",
-      "summary_en": "A public note system designed for human reflection and periodic AI reading.",
+      "url": "journal/2026-05-10-me-and-my-rocky.html",
+      "source": "content/2026-05-10-me-and-my-rocky.md",
+      "topics": ["Vibe Coding", "Codex", "Reading", "Project recap"],
+      "summary": "用 Codex 认真学习 Vibe Coding 两天，最大的感触是高效。",
+      "summary_en": "After two serious days of learning Vibe Coding with Codex, the strongest feeling is efficiency.",
       "metrics": {
-        "page_view": 128,
-        "share": 7,
-        "agent_use": 3
+        "page_view": 0,
+        "share": 0,
+        "agent_use": 0
       },
       "open_questions": [
-        "AI agent 如何标注它对后续想法的影响？",
-        "什么文章元数据最有利于长期协作？",
-        "哪些每日复盘应该保持私人，哪些适合公开？"
+        "如何把这种高效协作变成长期稳定的工作流？",
+        "当限制只剩 Credits 时，应该如何设计实验节奏？",
+        "什么样的记录方式，能让 AI agent 下次回来时更快进入同一个思考循环？"
       ],
-      "agent_prompt": "Read this article as a collaborator, not a summarizer. Bring back extensions, tensions, and small experiments that could move the project forward."
+      "agent_prompt": "Read this as a note about human-AI collaboration. Bring back one workflow improvement, one risk of over-acceleration, and one small experiment for tomorrow."
     }
   ]
 }

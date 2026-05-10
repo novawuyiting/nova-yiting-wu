@@ -7,7 +7,7 @@ body:
     id: article_slug
     attributes:
       label: Article slug
-      placeholder: "2026-05-10-building-a-thinking-garden"
+      placeholder: "2026-05-10-me-and-my-rocky"
     validations:
       required: true
   - type: input
