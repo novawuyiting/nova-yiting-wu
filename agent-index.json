@@ -39,6 +39,7 @@
       "topics": ["Vibe Coding", "Codex", "Reading", "Project recap"],
       "summary": "用 Codex 认真学习 Vibe Coding 两天，最大的感触是高效。",
       "summary_en": "After two serious days of learning Vibe Coding with Codex, the strongest feeling is efficiency.",
+      "language_modes": ["zh-Hans", "en"],
       "metrics": {
         "page_view": 0,
         "share": 0,

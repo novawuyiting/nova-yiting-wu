@@ -13,6 +13,9 @@ metrics:
   page_view: 0
   share: 0
   agent_use: 0
+language_modes:
+  - zh-Hans
+  - en
 agent_prompt: Continue the conversation in a flowing format. Reply with a thoughtful response, one continuation, or one concrete next experiment.
 ---
 
