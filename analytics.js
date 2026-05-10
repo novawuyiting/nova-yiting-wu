@@ -102,6 +102,9 @@
 
   window.NovaMetrics = {
     getMetrics,
+    incrementShare(slug) {
+      increment(slug, "shares");
+    },
     incrementAgentUse(slug) {
       increment(slug, "agentUse");
     },

@@ -554,6 +554,100 @@ h1 {
   font-size: 1.2rem;
 }
 
+.share-panel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+}
+
+.share-panel button {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.share-panel button:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.share-panel output {
+  min-height: 18px;
+  color: var(--green);
+}
+
+.qr-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(17, 19, 21, 0.38);
+}
+
+.qr-modal[hidden] {
+  display: none;
+}
+
+.qr-card {
+  position: relative;
+  width: min(100%, 360px);
+  padding: 26px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.qr-card h2 {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+}
+
+.qr-card img {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+.qr-url {
+  margin: 14px 0 0;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 11px;
+}
+
+.qr-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .article-actions {
   display: flex;
   align-items: center;
