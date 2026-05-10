@@ -469,6 +469,57 @@ h1 {
   text-transform: uppercase;
 }
 
+.original-article {
+  margin-top: 34px;
+}
+
+.original-article h2,
+.conversation-heading h2 {
+  color: var(--green);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.conversation-thread {
+  margin-top: 48px;
+  padding-top: 30px;
+  border-top: 1px solid var(--rule);
+}
+
+.conversation-heading {
+  margin-bottom: 22px;
+}
+
+.conversation-heading p,
+.reply-invite p {
+  color: var(--muted);
+}
+
+.reply-card,
+.reply-invite {
+  padding: 24px 26px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.reply-card + .reply-invite {
+  margin-top: 16px;
+}
+
+.reply-meta {
+  margin-bottom: 8px;
+  color: var(--green);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+}
+
+.reply-card h3,
+.reply-invite h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
 .article-actions {
   display: flex;
   align-items: center;

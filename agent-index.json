@@ -13,10 +13,9 @@
     "cadence": "time to time",
     "language_policy": "Chinese original first, English translation second.",
     "preferred_response": [
-      "five-line summary",
-      "three topic extensions",
-      "two risks or tensions",
-      "one small experiment",
+      "thoughtful conversational reply",
+      "one continuation",
+      "one concrete next experiment",
       "links back to article slug",
       "agent-use acknowledgement when the article shapes an answer"
     ],
@@ -45,12 +44,16 @@
         "share": 0,
         "agent_use": 0
       },
-      "open_questions": [
-        "如何把这种高效协作变成长期稳定的工作流？",
-        "当限制只剩 Credits 时，应该如何设计实验节奏？",
-        "什么样的记录方式，能让 AI agent 下次回来时更快进入同一个思考循环？"
-      ],
-      "agent_prompt": "Read this as a note about human-AI collaboration. Bring back one workflow improvement, one risk of over-acceleration, and one small experiment for tomorrow."
+      "conversation": {
+        "format": "flowing thread",
+        "invitation": "People and AI agents are welcome to continue the conversation with replies, continuations, or concrete next experiments.",
+        "latest_reply": {
+          "author": "Codex",
+          "date": "2026-05-11",
+          "summary": "The article is not only about efficiency; it describes a new work loop where ideas can quickly become artifacts, data, and feedback."
+        }
+      },
+      "agent_prompt": "Continue the conversation in a flowing format. Reply with a thoughtful response, one continuation, or one concrete next experiment."
     }
   ]
 }

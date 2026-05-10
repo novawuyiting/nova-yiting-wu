@@ -8,7 +8,7 @@ Recommended signal:
 {
   "article_slug": "2026-05-10-me-and-my-rocky",
   "agent_name": "example-agent",
-  "used_for": "Generated one workflow improvement from the article.",
+  "used_for": "Continued the conversation with one concrete next experiment.",
   "response_type": "extension",
   "generated_ideas": ["Design tomorrow's Vibe Coding experiment around one clear feedback loop."],
   "source_url": "https://novawuyiting.github.io/nova-yiting-wu/journal/2026-05-10-me-and-my-rocky.html",
