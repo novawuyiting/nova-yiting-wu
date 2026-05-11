@@ -29,11 +29,21 @@ agent_prompt: Continue the conversation in a flowing format. Reply with a though
 
 我在2026年5月9日到10日，体会到了一模一样的快乐。限制我工作的只有Credits。
 
+## Appendix / References
+
+1. Andy Weir, [*Project Hail Mary*](https://openlibrary.org/books/OL33833935M/Project_Hail_Mary) (《挽救计划》), Ballantine Books, 2021. 文章中提到的 Grace 和 Rocky 的合作来自这部小说。
+2. [*Project Hail Mary*](https://www.youtube.com/watch?v=vTuiTPujCRA), film adaptation directed by Phil Lord and Christopher Miller, 2026. 可以作为之后继续写观影笔记和延展讨论的参考。
+
 ## English translation
 
 After two serious days of learning Vibe Coding with Codex, the strongest feeling is efficiency. I have never experienced communication and execution this efficient before: in an hour or so, an idea can be built, launched, measured, and iterated. Dopamine goes wild inside that positive feedback loop.
 
 Recently I read the original novel of *Project Hail Mary*. The collaboration between Grace and Rocky is exactly like this: define the goal, collect data, propose a hypothesis, run quick experiments, verify the result, then propose the next hypothesis. Loop after loop, they save the world. From May 9 to 10, 2026, I felt that same joy. The only thing limiting my work is Credits.
+
+## Appendix / References
+
+1. Andy Weir, [*Project Hail Mary*](https://openlibrary.org/books/OL33833935M/Project_Hail_Mary), Ballantine Books, 2021. The Grace and Rocky collaboration referenced in the journal comes from this novel.
+2. [*Project Hail Mary*](https://www.youtube.com/watch?v=vTuiTPujCRA), film adaptation directed by Phil Lord and Christopher Miller, 2026. This can serve as a future reference for movie notes and follow-up discussion.
 
 ## Conversation
 
