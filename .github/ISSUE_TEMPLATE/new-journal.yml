@@ -1,0 +1,95 @@
+name: New journal entry
+description: Publish a bilingual journal entry from GitHub Issues.
+title: "Journal: "
+labels: ["journal-entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this form to publish a new journal entry. The GitHub Action will create the Markdown source, HTML page, homepage entry, agent index item, RSS item, and sitemap entry.
+
+        Write Chinese first. Add the English version yourself when possible; this workflow does not call an AI translator or spend AI credits.
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-05-11"
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: Slug
+      description: Optional. Lowercase letters, numbers, and hyphens. Leave blank to generate from the English title.
+      placeholder: "2026-05-11-my-new-note"
+  - type: input
+    id: title_zh
+    attributes:
+      label: Chinese title
+      placeholder: "今天的标题"
+    validations:
+      required: true
+  - type: input
+    id: title_en
+    attributes:
+      label: English title
+      placeholder: "Today's Title"
+    validations:
+      required: true
+  - type: textarea
+    id: summary_zh
+    attributes:
+      label: Chinese summary
+      description: One sentence for the homepage and metadata.
+      placeholder: "一句话摘要。"
+    validations:
+      required: true
+  - type: textarea
+    id: summary_en
+    attributes:
+      label: English summary
+      description: One sentence for the homepage and metadata.
+      placeholder: "One-sentence summary."
+    validations:
+      required: true
+  - type: input
+    id: topics
+    attributes:
+      label: Topics
+      description: Comma-separated.
+      placeholder: "Vibe Coding, Codex, Reading, Project recap"
+    validations:
+      required: true
+  - type: textarea
+    id: body_zh
+    attributes:
+      label: Chinese body
+      description: Separate paragraphs with blank lines.
+      placeholder: "正文第一段。\n\n正文第二段。"
+    validations:
+      required: true
+  - type: textarea
+    id: body_en
+    attributes:
+      label: English body
+      description: Separate paragraphs with blank lines.
+      placeholder: "First paragraph.\n\nSecond paragraph."
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Optional. One per line, using Creator | Title | URL | Publisher/platform | Year | Why it matters.
+      placeholder: "Andy Weir | Project Hail Mary | https://openlibrary.org/books/OL33833935M/Project_Hail_Mary | Ballantine Books | 2021 | The collaboration idea came from this novel."
+  - type: textarea
+    id: first_reply_zh
+    attributes:
+      label: First reply in Chinese
+      description: Optional. Leave blank if there is no first reply yet.
+  - type: textarea
+    id: first_reply_en
+    attributes:
+      label: First reply in English
+      description: Optional. Leave blank if there is no first reply yet.

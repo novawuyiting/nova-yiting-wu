@@ -15,6 +15,7 @@ A static bilingual personal journal site designed for Chinese-first writing, Eng
 - Article metadata includes `Page View`, `Share`, and `Agent Use`.
 - `analytics.js` provides local demo counts and a future integration point for real analytics.
 - `agent-use.schema.json`, `docs/agent-use.md`, `ai.txt`, and the GitHub issue template define the agent-use acknowledgement contract.
+- `.github/ISSUE_TEMPLATE/new-journal.yml` and `.github/workflows/publish-journal.yml` let GitHub Issues publish future journal entries without Codex.
 
 ## Tracking AI reads and use
 
@@ -41,6 +42,18 @@ event hooks with Plausible, Umami, GoatCounter, or a small serverless function.
    `sitemap.xml` with absolute URLs for best SEO crawler support.
 
 ## Add a new article
+
+### GitHub Issue workflow
+
+1. Open GitHub Issues.
+2. Choose `New journal entry`.
+3. Fill in the bilingual article fields and optional references.
+4. Submit the issue.
+5. GitHub Actions publishes the Markdown source, HTML page, homepage entry, agent index item, RSS item, and sitemap entry.
+
+See `docs/journal-publishing.md` for the daily workflow.
+
+### Manual workflow
 
 1. Copy `templates/journal-entry.md` into `content/YYYY-MM-DD-slug.md`.
 2. Copy `templates/journal-entry.html` into `journal/YYYY-MM-DD-slug.html`.
