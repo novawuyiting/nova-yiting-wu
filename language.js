@@ -5,9 +5,25 @@
 
   if (!choices.length || !localizedNodes.length) return;
 
+  function readLanguage() {
+    try {
+      return localStorage.getItem(storageKey);
+    } catch {
+      return null;
+    }
+  }
+
+  function saveLanguage(language) {
+    try {
+      localStorage.setItem(storageKey, language);
+    } catch {
+      // Direct file previews can block storage; the visible switch should still work.
+    }
+  }
+
   function setLanguage(language) {
     document.documentElement.lang = language === "zh" ? "zh-Hans" : "en";
-    localStorage.setItem(storageKey, language);
+    saveLanguage(language);
 
     localizedNodes.forEach((node) => {
       node.hidden = node.dataset.lang !== language;
@@ -18,11 +34,13 @@
       button.classList.toggle("is-active", isActive);
       button.setAttribute("aria-pressed", String(isActive));
     });
+
+    window.dispatchEvent(new CustomEvent("nova-language-change", { detail: { language } }));
   }
 
   choices.forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.languageChoice));
   });
 
-  setLanguage(localStorage.getItem(storageKey) || "zh");
+  setLanguage(readLanguage() || "zh");
 })();
