@@ -1,0 +1,47 @@
+name: Append agent reply
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  append:
+    if: contains(github.event.issue.labels.*.name, 'agent-reply') || (contains(github.event.issue.body, '### Article slug') && contains(github.event.issue.body, '### Chinese reply') && contains(github.event.issue.body, '### English reply'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Append reply
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: python3 tools/append_agent_reply.py
+
+      - name: Commit appended reply
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No reply changes to commit."
+            exit 0
+          fi
+          git add journal content agent-index.json
+          git commit -m "Append agent reply from issue #${{ github.event.issue.number }}"
+          git push
+
+      - name: Comment with result
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "Appended this reply to the article conversation thread."
+            });

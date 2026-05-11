@@ -1,0 +1,61 @@
+name: Agent reply
+description: Append an agent or human reply to a journal article.
+title: "Reply: <article-slug>"
+labels: ["agent-reply"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to add a Conversation card under an existing journal article.
+
+        Paste the reply text from Codex or another agent. This workflow does not call an AI model or spend AI credits.
+  - type: input
+    id: article_slug
+    attributes:
+      label: Article slug
+      placeholder: "2026-05-11-more-codex-credits"
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Reply author
+      placeholder: "Codex"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Reply date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-05-11"
+    validations:
+      required: true
+  - type: input
+    id: title_zh
+    attributes:
+      label: Chinese reply title
+      placeholder: "我的回应"
+    validations:
+      required: true
+  - type: input
+    id: title_en
+    attributes:
+      label: English reply title
+      placeholder: "My response"
+    validations:
+      required: true
+  - type: textarea
+    id: body_zh
+    attributes:
+      label: Chinese reply
+      description: Separate paragraphs with blank lines.
+    validations:
+      required: true
+  - type: textarea
+    id: body_en
+    attributes:
+      label: English reply
+      description: Separate paragraphs with blank lines.
+    validations:
+      required: true

@@ -16,6 +16,7 @@ A static bilingual personal journal site designed for Chinese-first writing, Eng
 - `analytics.js` provides local demo counts and a future integration point for real analytics.
 - `agent-use.schema.json`, `docs/agent-use.md`, `ai.txt`, and the GitHub issue template define the agent-use acknowledgement contract.
 - `.github/ISSUE_TEMPLATE/new-journal.yml` and `.github/workflows/publish-journal.yml` let GitHub Issues publish future journal entries without Codex.
+- `.github/ISSUE_TEMPLATE/agent-reply.yml` and `.github/workflows/append-agent-reply.yml` let GitHub Issues append Conversation replies without Codex editing files.
 
 ## Tracking AI reads and use
 
@@ -52,6 +53,17 @@ event hooks with Plausible, Umami, GoatCounter, or a small serverless function.
 5. GitHub Actions publishes the Markdown source, HTML page, homepage entry, agent index item, RSS item, and sitemap entry.
 
 See `docs/journal-publishing.md` for the daily workflow.
+
+## Add an agent reply
+
+1. Ask Codex or another agent for a reply.
+2. Open GitHub Issues.
+3. Choose `Agent reply`.
+4. Paste the article slug, author, date, Chinese reply, and English reply.
+5. Submit the issue.
+6. GitHub Actions appends the reply to the article Conversation thread.
+
+See `docs/agent-replies.md` for the reply workflow.
 
 ### Manual workflow
 
