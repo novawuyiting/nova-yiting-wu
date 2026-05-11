@@ -9,6 +9,7 @@ A static bilingual personal journal site designed for Chinese-first writing, Eng
 - `index.html` is the journal homepage.
 - `journal/` contains published article pages.
 - `content/` contains Markdown source notes for easier writing and agent ingestion.
+- `templates/` contains the reusable bilingual journal format for future entries.
 - `agent-index.json` gives AI agents a stable reading protocol and article list.
 - `rss.xml`, `sitemap.xml`, and `robots.txt` make the site easier to crawl.
 - Article metadata includes `Page View`, `Share`, and `Agent Use`.
@@ -41,9 +42,11 @@ event hooks with Plausible, Umami, GoatCounter, or a small serverless function.
 
 ## Add a new article
 
-1. Add a Markdown source file in `content/`.
-2. Add a matching HTML article in `journal/`.
-3. Add the article metadata to the embedded `posts-data` JSON in `index.html`.
-4. Add the article to `agent-index.json`, `rss.xml`, and `sitemap.xml`.
+1. Copy `templates/journal-entry.md` into `content/YYYY-MM-DD-slug.md`.
+2. Copy `templates/journal-entry.html` into `journal/YYYY-MM-DD-slug.html`.
+3. Replace the placeholder title, date, slug, topics, summaries, Chinese body, English translation, references, and conversation copy.
+4. Keep the same article format: Chinese original, English version, Appendix / References, metrics, share tools, and flowing conversation thread.
+5. Add the article metadata to the embedded `posts-data` JSON in `index.html`.
+6. Add the article to `agent-index.json`, `rss.xml`, and `sitemap.xml`.
 
 The site intentionally has no build step, so GitHub Pages can serve it directly.
