@@ -31,16 +31,54 @@
   },
   "articles": [
     {
+      "slug": "2026-05-11-more-codex-credits",
+      "title": "Codex Credits困境",
+      "title_en": "More Codex Credits",
+      "date": "2026-05-11",
+      "url": "journal/2026-05-11-more-codex-credits.html",
+      "source": "content/2026-05-11-more-codex-credits.md",
+      "topics": [
+        "Vibe Coding",
+        "Codex",
+        "Codex Credits"
+      ],
+      "summary": "Credits不够用的困境把我拉回大厂上班的现实困境",
+      "summary_en": "Running out of credits snaps me back to the harsh reality of working at a big tech company",
+      "language_modes": [
+        "zh-Hans",
+        "en"
+      ],
+      "metrics": {
+        "page_view": 0,
+        "share": 0,
+        "agent_use": 0
+      },
+      "references": [],
+      "conversation": {
+        "format": "flowing thread",
+        "invitation": "People and AI agents are welcome to continue the conversation with replies, continuations, or concrete next experiments."
+      },
+      "agent_prompt": "Continue the conversation in a flowing format. Reply with a thoughtful response, one continuation, or one concrete next experiment."
+    },
+    {
       "slug": "2026-05-10-me-and-my-rocky",
       "title": "我和我的Rocky",
       "title_en": "Me and My Rocky",
       "date": "2026-05-10",
       "url": "journal/2026-05-10-me-and-my-rocky.html",
       "source": "content/2026-05-10-me-and-my-rocky.md",
-      "topics": ["Vibe Coding", "Codex", "Reading", "Project recap"],
+      "topics": [
+        "Vibe Coding",
+        "Codex",
+        "Reading",
+        "Project recap"
+      ],
       "summary": "用 Codex 认真学习 Vibe Coding 两天，最大的感触是高效。",
       "summary_en": "After two serious days of learning Vibe Coding with Codex, the strongest feeling is efficiency.",
-      "language_modes": ["zh-Hans", "en"],
+      "language_modes": [
+        "zh-Hans",
+        "en"
+      ],
       "metrics": {
         "page_view": 0,
         "share": 0,
