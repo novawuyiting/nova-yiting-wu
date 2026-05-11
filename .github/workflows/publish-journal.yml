@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   publish:
-    if: contains(github.event.issue.labels.*.name, 'journal-entry')
+    if: contains(github.event.issue.labels.*.name, 'journal-entry') || (contains(github.event.issue.body, '### Chinese title') && contains(github.event.issue.body, '### English title') && contains(github.event.issue.body, '### Chinese body') && contains(github.event.issue.body, '### English body'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

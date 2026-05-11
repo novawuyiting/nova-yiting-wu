@@ -77,8 +77,21 @@ def split_paragraphs(text):
     return [part.strip() for part in re.split(r"\n\s*\n", text.strip()) if part.strip()]
 
 
+def inline_markdown_html(text):
+    html = escape(text)
+    html = re.sub(
+        r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
+        lambda match: (
+            f'<a href="{escape(match.group(2), quote=True)}" target="_blank" rel="noreferrer">'
+            f"{match.group(1)}</a>"
+        ),
+        html,
+    )
+    return html.replace("\n", "<br />\n")
+
+
 def html_paragraphs(text):
-    return "\n".join(f"        <p>{escape(part)}</p>" for part in split_paragraphs(text))
+    return "\n".join(f"        <p>{inline_markdown_html(part)}</p>" for part in split_paragraphs(text))
 
 
 def markdown_paragraphs(text):
