@@ -31,6 +31,37 @@
   },
   "articles": [
     {
+      "slug": "2026-05-12-can-codex-reshape-music-distribution",
+      "title": "Codex能改造音乐发行吗？",
+      "title_en": "Can Codex Reshape Music Distribution?",
+      "date": "2026-05-12",
+      "url": "journal/2026-05-12-can-codex-reshape-music-distribution.html",
+      "source": "content/2026-05-12-can-codex-reshape-music-distribution.md",
+      "topics": [
+        "Vibe Coding",
+        "Music Distribution",
+        "Music Promotion",
+        "SoundOn"
+      ],
+      "summary": "在考虑过成本与收益后，就自然而然的开始思考如何在我的本职领域- 音乐发行与宣推，拿Codex做一遍。",
+      "summary_en": "After weighing costs and returns, I started thinking about how Codex might be applied to my own field: music distribution and promotion.",
+      "language_modes": [
+        "zh-Hans",
+        "en"
+      ],
+      "metrics": {
+        "page_view": 0,
+        "share": 0,
+        "agent_use": 0
+      },
+      "references": [],
+      "conversation": {
+        "format": "flowing thread",
+        "invitation": "People and AI agents are welcome to continue the conversation with replies, continuations, or concrete next experiments."
+      },
+      "agent_prompt": "Continue the conversation in a flowing format. Reply with a thoughtful response, one continuation, or one concrete next experiment."
+    },
+    {
       "slug": "2026-05-11-more-codex-credits",
       "title": "Codex Credits困境",
       "title_en": "More Codex Credits",
