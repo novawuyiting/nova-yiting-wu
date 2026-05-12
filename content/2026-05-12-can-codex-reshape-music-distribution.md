@@ -29,6 +29,9 @@ source_issue: https://github.com/novawuyiting/nova-yiting-wu/issues/5
 思来想去，好像只有像歌单的流量增长是可以不依赖API和各平台接口闭环掉的。
 有同事问过我，长期来看Distributor会消亡吗？我还坚持我最初的判断，除非发行成本可以降低为0，否则几乎不可能。
 
+WIP项目
+[SoundOn Discoveries](https://novawuyiting.github.io/soundon-discoveries/)
+
 
 
 ## English translation
@@ -42,6 +45,9 @@ Once the idea appeared, I immediately noticed many points of resistance. Music d
 After thinking it through, it seems that playlist traffic growth may be one of the few areas that can be optimized without relying on APIs or closed-loop integrations with each platform.
 
 A colleague once asked me whether distributors will disappear in the long run. I still stand by my original judgment: unless the cost of distribution can be reduced to zero, it is almost impossible.
+
+WIP Projects
+[SoundOn Discoveries](https://novawuyiting.github.io/soundon-discoveries/)
 
 
 
